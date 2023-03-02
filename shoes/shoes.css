@@ -1,3 +1,4 @@
+/* variable start */
 :root {
     --black: #272727;
     --white: aliceblue;
@@ -5,7 +6,9 @@
     --maxColor: #F68A3E;
     --miniColor: #272727;
 }
+/* variable end */
 
+/* global start */
 html {
     overflow-x: hidden;
 }
@@ -15,9 +18,9 @@ body{
     margin: 0;
     padding: 0;
 }
+/* global end */
 
 /* navbar start */
-
 nav {
     position: fixed;
     z-index: 1;
@@ -40,6 +43,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: var(--black);
+    transition: color 0.5s ease-in-out;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 24px;
@@ -83,11 +87,9 @@ nav ul li a {
 .icons i {
     color: var(--white);
 }
-
 /* navbar end */
 
 /* section start */
-
 section {
     display: flex;
     width: 100%;
@@ -95,16 +97,22 @@ section {
 
 section .pro {
     height: 100vh;
+    width: calc(100% / 3);
+    transition: width 0.5s ease-in-out;
     background-color: var(--proColor);
 }
 
 section .max {
     height: 100vh;
+    width: calc(100% / 3);
+    transition: width 0.5s ease-in-out;
     background-color: var(--maxColor);
 }
 
 section .mini {
     height: 100vh;
+    width: calc(100% / 3);
+    transition: width 0.5s ease-in-out;
     background-color: var(--miniColor);
 }
 
@@ -118,7 +126,7 @@ section .pro, section .max, section .mini {
 
 section h2 {
     color: var(--white);
-    margin: 0 30% 0 0 ;
+    margin: 0 30% 14% 0 ;
     max-width: 100%;
     font-weight: 600;
     font-size: 134.235px;
@@ -131,41 +139,19 @@ section img {
     align-items: center;
     max-width: 80%;
     transform: rotate(-45deg);
+    transition: transform 0.5s ease-in-out;
 }
 
 
 /* animation start */
-section .pro:hover, 
-section .max:hover, 
-section .mini:hover {
-    width: 75%;
-    transition: width 0.5s ease-in-out;
-}
-
-section .pro:hover img,     
-section .max:hover img, 
-section .mini:hover img {
+.rotate img {
     transform: rotate(0deg);
     transition: transform 0.5s ease-in-out;
 }
 
-section .pro:not(:hover) img, 
-section .max:not(:hover) img, 
-section .mini:not(:hover) img {
-    transform: rotate(-45deg);
-    transition: transform 0.5s ease-in-out;
-}
-
-section .max:not(:hover),
-section .mini:not(:hover),
-section .pro:not(:hover) {
-  width: calc(100% / 3);
-  transition: width 0.5s ease-in-out;
-}
-
 .navbarNewColor {
     color: var(--white);
+    transition: color 0.5s ease-in-out;
 }
 /* animation end */
-
 /* section end */
