@@ -75,7 +75,7 @@ nav ul li a {
 }
 
 .icons {
-    float: right;
+    /* float: right; */
     justify-content: center;
 }
 
@@ -87,6 +87,37 @@ nav ul li a {
 .icons i {
     color: var(--white);
 }
+  
+  @media only screen and (max-width: 1450px) {
+    .navbar {
+        margin: 0 0 0 -20%;
+    }
+    
+    .navbar li {
+      padding: 0 20px;
+    }
+
+    .icons {
+        margin-right: 200px;
+    }
+  }
+
+    /* Largeur d'écran jusqu'à 1200px */
+    @media only screen and (max-width: 1200px) {
+        .navbar {
+            margin: 0 0 0 -20%;
+            width: 50%;
+        }
+        
+        .navbar li {
+          padding: 0 20px;
+        }
+    
+        .icons {
+            margin-right: 300px;
+        }
+      }
+  
 /* navbar end */
 
 /* section start */
