@@ -7,16 +7,20 @@
     --grey: #bbbfc4;
 }
 
-body {
-  /* height: 100vh; */
-  margin: 0;
-  padding: 0;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
 /* cross start */
 .cross {
     margin: 28px 85%;
@@ -41,21 +45,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px auto 0 auto;
+    margin: -50px auto 0 auto;
     width: 391px;
     height: 391px;
-    background-color: var(--red);
 }
 
 /* slice start */
 .slices {
   position: absolute;
-  margin: 0 150px 450px auto;
+  margin: 100px 150px 450px auto;
 }
 
 .slice1 {
   position: absolute;
-  /* margin: 10px; */
 }
 .slice2 {
   position: absolute;
@@ -81,12 +83,12 @@ body {
 }
 .slice7 {
   position: absolute;
-  margin: 100px 0 0 -90px;
+  margin: 95px 0 0 -80px;
   transform: rotate(-90deg);
 }
 .slice8 {
   position: absolute;
-  margin: 35px 0 0 -90px;
+  margin: 30px 0 0 -85px;
 }
 /* slice end */
 
@@ -94,115 +96,133 @@ body {
 /* arrow start */
 
 .arrows {
-    position: relative;
-    width: 391px;
-    height: 391px;
-  }
+  position: relative;
+  width: 391px;
+  height: 391px;
+  margin: 55px 25px 0 0;
+  transform: rotate(20deg);
+}
+
+.arrows img {
+  width: 104%;
+}
   
-  .arrow1 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(-22.5deg);
-  }
+.arrow1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-22.5deg);
+}
   
-  .arrow2 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(22.5deg);
-  }
-  
-  .arrow3 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(67.5deg);
-  }
-  
-  .arrow4 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(112.5deg);
-  }
-  
-  .arrow5 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(157.5deg);
-  }
-  
-  .arrow6 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(202.5deg);
-  }
-  
-  .arrow7 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(247.5deg);
-  }
-  
-  .arrow8 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotate(292.5deg);
-  }
+.arrow2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(22.5deg);
+}
+
+.arrow3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(67.5deg);
+}
+
+.arrow4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(112.5deg);
+}
+
+.arrow5 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(157.5deg);
+}
+
+.arrow6 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(202.5deg);
+}
+
+.arrow7 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(247.5deg);
+}
+
+.arrow8 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(292.5deg);
+}
   
 /* arrow end */
 /* pizza end */
 
 /* main text start */
 .main-text {
+    margin: 70px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+
 /* main text end */
 
 /* footer start */
-/* .footer {
+.footer {
+    position: absolute;
     background-color: var(--green);
     height: 300px;
     width: 110%;
     bottom: -150px;
     transform: rotate(-3deg);
-} */
-
-/* button start */
-.red-circle {
-    display: flex;
-    background-color: var(--red);
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin: 0 auto;
 }
 
-.footer a {
-    color: var(--white);
-    font-size: 50px;
-    display: flex;
-    margin: 0 auto;
+/* button start */
+
+.button {
+  margin: 90px auto;
+}
+.red-circle {
+  position: relative;
+  display: flex;
+  background-color: var(--red);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.red-circle a {
+  position: relative;
+  color: var(--white);
+  font-size: 50px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .footer-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--greenP);
-    font-family: Poppins;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0.02em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--greenP);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  margin: 30px 0;
 }
 /* button end */
 /* footer end */
